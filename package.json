@@ -1,7 +1,7 @@
 {
   "name": "@exponential/utils",
   "description": "This package contains some utility functions for use by API developers of exponentialhost.com",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Exponential-Hosting/utils.git"
   },
   "author": "dev@exponentialhost.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Exponential-Hosting/utils/issues"
   },
