@@ -9,13 +9,13 @@ This method can be used to validate api_key. To use this, download this package 
 ### Installation:
 
 ```
-npm install @exponential/exponential-utils
+npm install @exponential/utils
 ```
 
 ### Quick Start:
 
 ```
-const { validateCredential } = require('@exponential/exponential-utils');
+const { validateCredential } = require('@exponential/utils');
 
 app.post("/", validateCredential.bind(null, process.env.API_KEY), async (req, res) => {
 
