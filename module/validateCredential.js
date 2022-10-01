@@ -2,12 +2,10 @@ const md5 = require("md5");
 
 const validateCredential = async (API_KEY, req, res, next) => {
   const REQ_API_KEY = req.headers.api_key || "";
-  if(REQ_API_KEY!=API_KEY){
-    res
-      .status(401)
-      .json({
-        message: "The request was unacceptable. API KEY validation failled.",
-      });
+  if (REQ_API_KEY != API_KEY) {
+    res.status(401).json({
+      message: "The request was unacceptable. API KEY validation failled.",
+    });
     return;
   }
 
@@ -24,15 +22,12 @@ const validateCredential = async (API_KEY, req, res, next) => {
 
   // console.log(computedSignature, ' <----> ', signature);
 
-  if (computedSignature === signature){
+  if (computedSignature === signature) {
     next();
-  }
-  else{
-    res
-      .status(401)
-      .json({
-        message: "The request was unacceptable. API KEY validation failled.",
-      });
+  } else {
+    res.status(401).json({
+      message: "The request was unacceptable. API KEY validation failled.",
+    });
     return;
   }
 };
