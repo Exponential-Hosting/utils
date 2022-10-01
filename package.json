@@ -1,5 +1,5 @@
 {
-  "name": "exponential-utils",
+  "name": "@exponential/exponential-utils",
   "description": "this contains some utility functions which are used for development at Exponential Host",
   "version": "1.0.0",
   "main": "index.js",
