@@ -1,14 +1,17 @@
 # utils
 ***
 ## validateCredential
-This method can be used to validate api_key. To use this, get utils module in project and import validateCredential and use it as a middleware in api.
+This method can be used to validate api_key. To use this, download this package and import validateCredential then use it as a middleware in api.
 
-Example:
+### Installation:
 ```
-const validateCredential = require('./utils/validateCredential');
+npm install exponential-utils
+```
+### Quick Start:
+```
+const { validateCredential } = require('exponential-utils');
 
-app.post("/", validateCredential, async (req, res) => {
+app.post("/", validateCredential.bind(null, process.env.API_KEY), async (req, res) => {
 
 })
- 
 ```
