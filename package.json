@@ -1,0 +1,22 @@
+{
+  "name": "@exponential/exponential-utils",
+  "description": "this contains some utility functions which are used for development at Exponential Host",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exponential-Hosting/utils.git"
+  },
+  "author": "Exponential Host",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Exponential-Hosting/utils/issues"
+  },
+  "homepage": "https://github.com/Exponential-Hosting/utils#readme",
+  "dependencies": {
+    "md5": "^2.3.0"
+  }
+}
