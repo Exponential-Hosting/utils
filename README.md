@@ -7,7 +7,7 @@
 
 ## validateCredential
 
-This method can be used to validate api_key. To use this, download this package and import validateCredential then use it as a middleware in api.
+This method can be used to validate calls made from the Exponential server to the API. To use this, download this package and import validateCredential then use it as a middleware in api.
 
 ### Installation:
 
