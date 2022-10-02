@@ -18,7 +18,7 @@ const validateCredential = async (API_SECRET, req, res, next) => {
     .sort()
     .map((paramKey) => `${paramKey}=${params[paramKey]}`)
     .join("|");
-  const computedSignature = md5(sortedStr + API_KEY).toString();
+  const computedSignature = md5(sortedStr + API_SECRET).toString();
 
   // console.log(computedSignature, ' <----> ', signature);
 
