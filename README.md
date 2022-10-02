@@ -17,7 +17,11 @@ npm install @exponential/utils
 ```
 const { validateCredential } = require('@exponential/utils');
 
-app.post("/", validateCredential.bind(null, process.env.API_KEY), async (req, res) => {
+app.get("/path-to-be-authenticated-1", validateCredential.bind(null, process.env.API_KEY), async (req, res) => {
+
+})
+
+app.post("/path-to-be-authenticated-2", validateCredential.bind(null, process.env.API_KEY), async (req, res) => {
 
 })
 ```
