@@ -2,6 +2,8 @@
 
 ---
 
+[![NPM dependencies][npm-dependencies-image]][npm-dependencies-url] [![Last commit][last-commit-image]][last-commit-url] [![Last release][release-image]][release-url] 
+
 ## validateCredential
 
 This method can be used to validate api_key. To use this, download this package and import validateCredential then use it as a middleware in api.
