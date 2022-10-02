@@ -4,7 +4,8 @@
   "version": "1.0.4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-init": "jasmine init",
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/Exponential-Hosting/utils#readme",
   "dependencies": {
     "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "jasmine": "^4.4.0"
   }
 }

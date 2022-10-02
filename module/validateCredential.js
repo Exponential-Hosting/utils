@@ -1,8 +1,13 @@
 const md5 = require("md5");
+const timestampLimitInSecond = 300;
 
 const validateCredential = async (API_SECRET, req, res, next) => {
   const REQ_API_SECRET = req.headers._EXPONENTIAL_API_SECRET || "";
-  if (REQ_API_SECRET != API_SECRET) {
+  const reqTimestamp = req.query.timestamp || 0;
+  const currentTimestamp = new Date().valueOf();
+  const timestampRange = reqTimestamp+timestampLimitInSecond*1000;
+  
+  if(currentTimestamp > timestampRange || REQ_API_SECRET != API_SECRET){
     res.status(401).json({
       message: "The request was unacceptable. API KEY validation failled.",
     });

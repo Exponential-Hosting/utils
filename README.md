@@ -16,6 +16,7 @@ npm install @exponential/utils
 ```
 
 ### Quick Start:
+Before getting started don't forget to add `API_KEY={you_api_key}` in project `.env` file.
 
 ```
 const { validateCredential } = require('@exponential/utils');
