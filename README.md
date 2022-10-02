@@ -1,6 +1,9 @@
 # utils
 
 ---
+<img src="https://img.shields.io/github/issues/Exponential-Hosting/utils">
+<img src="https://img.shields.io/github/license/Exponential-Hosting/utils">
+<img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FExponential-Hosting%2Futils">
 
 ## validateCredential
 
