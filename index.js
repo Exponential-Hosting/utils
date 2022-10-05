@@ -1,5 +1,6 @@
-const validateCredential = require("./module/validateCredential");
+const { validateCredential, computeSignature } = require("./module/validateCredential");
 
 module.exports = {
   validateCredential,
+  computeSignature
 };
