@@ -10,7 +10,7 @@ const validateCredential = (apiSecret, req, res, next) => {
     next();
   } else {
     res.status(401).json({
-      message: "The request was unacceptable. API KEY validation failled.",
+      message: "The request was unacceptable. API KEY validation failed.",
     });
     return;
   }
