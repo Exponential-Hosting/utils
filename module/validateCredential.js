@@ -1,7 +1,7 @@
 const md5 = require("md5");
 
 const validateCredential = async (API_SECRET, req, res, next) => {
-  const reqUrlSearchParams = new URLSearchParams(req.url.substring(1));
+  const reqUrlSearchParams = new URLSearchParams(req.url.split('?')[1] || "");
   const params = Object.fromEntries(reqUrlSearchParams.entries());
   const signature = params.signature || "";
   delete params.signature;
