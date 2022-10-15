@@ -12,13 +12,13 @@ This method can be used to validate calls made from the Exponential server to th
 ### Installation:
 
 ```
-npm install @exponential/utils
+npm install @exponential/developer-utils
 ```
 
 ### Quick Start:
 
 ```
-const { validateCredential } = require('@exponential/utils');
+const { validateCredential } = require('@exponential/developer-utils');
 
 app.get("/path-to-be-authenticated-1", validateCredential.bind(null, process.env.API_SECRET), async (req, res) => {
 
