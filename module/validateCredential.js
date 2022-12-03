@@ -1,18 +1,26 @@
 const md5 = require("md5");
 
 const validateCredential = (apiSecret, req, res, next) => {
-  const query = req.url.split('?')[1] || "";
-  const computedSignature = computeSignature(apiSecret, query);
+  try {
+    const query = req.url.split('?')[1] || "";
+    const computedSignature = computeSignature(apiSecret, query);
 
-  // console.log(computedSignature, ' <----> ', signature);
+    // console.log(computedSignature, ' <----> ', signature);
 
-  if (computedSignature === req.get('signature')) {
-    next();
-  } else {
-    res.status(401).json({
-      message: "The request was unacceptable. API KEY validation failed.",
+    if (computedSignature === req.get('signature')) {
+      next();
+    } else {
+      res.status(401).json({
+        message: "The request was unacceptable. API KEY validation failed.",
+      });
+      return;
+    }
+  }
+  catch (e) {
+    res.status(500).json({
+      message: "error in creds validation"
     });
-    return;
+    console.log("error in creds validation");
   }
 };
 
