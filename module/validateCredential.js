@@ -21,6 +21,7 @@ const validateCredential = (apiSecret, req, res, next) => {
       message: "error in creds validation"
     });
     console.log("error in creds validation");
+    console.log(e);
   }
 };
 
