@@ -8,8 +8,10 @@ const validateCredential = (apiSecret, req, res, next) => {
     // console.log(computedSignature, ' <----> ', signature);
 
     if (computedSignature === req.get('signature')) {
+      console.log("auth succeeded: " + req.url);
       next();
     } else {
+      console.log("auth failed: " + req.url);
       res.status(401).json({
         message: "The request was unacceptable. API KEY validation failed.",
       });
@@ -17,11 +19,11 @@ const validateCredential = (apiSecret, req, res, next) => {
     }
   }
   catch (e) {
+    console.log("error in creds validation");
+    console.log(e);
     res.status(500).json({
       message: "error in creds validation"
     });
-    console.log("error in creds validation");
-    console.log(e);
   }
 };
 
