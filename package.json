@@ -1,21 +1,21 @@
 {
   "name": "@exponential/developer-utils",
-  "description": "This package contains some utility functions for use by API developers of exponentialhost.com",
-  "version": "1.1.3",
+  "description": "This package contains some utility functions for use by API developers of app.datacloud.sh",
+  "version": "1.1.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Exponential-Hosting/developer-utils.git"
+    "url": "git+https://github.com/ExponentialAquaNetworks/developer-utils.git"
   },
   "author": "dev@exponentialhost.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Exponential-Hosting/developer-utils/issues"
+    "url": "https://github.com/ExponentialAquaNetworks/developer-utils/issues"
   },
-  "homepage": "https://github.com/Exponential-Hosting/developer-utils#readme",
+  "homepage": "https://github.com/ExponentialAquaNetworks/developer-utils#readme",
   "dependencies": {
     "md5": "^2.3.0"
   }
